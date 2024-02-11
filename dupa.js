@@ -1,4 +1,4 @@
-var zdjencia = ['1.png','2.png','3.png','4.png','5.png','6.png'];
+var zdjencia = ['1.png','2.png','3.png','4.png','5.png','6.png','7.png'];
 var zdjenciaIndex=0
 console.log("dupa")
 function funkcja() {
