@@ -1,1 +1,1 @@
-Zajebista strona o browl stars
+https://zyga1.github.io/dupastrona/html.html
