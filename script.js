@@ -28,8 +28,6 @@ var zdjencia = [['zadymiarze/1.png',
 var nazwy = zdjencia[1].flat();
 console.log(nazwy)
 
-
-
 var zdjenciaIndex=0
 function postacieZdjecie() {
     let zdjecie = document.getElementById('szeli');
@@ -41,7 +39,6 @@ function postacieZdjecie() {
 }
 
 const zdjecia = document.getElementById("kontener")
-const karta = document.getElementsByClassName("card")
 zdjencia[0].forEach((zdjecie, index) => {
         let box = document.createElement("div");
         const imagine = document.createElement("img");
