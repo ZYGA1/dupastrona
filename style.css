@@ -32,10 +32,10 @@ footer {
 }
 
 #szeli {
-    border: 1px blue solid;
-    animation: ramka 10s infinite;
+    border: 3px blue solid;
+    animation: ramka 15s infinite;
 }
 
 @keyframes ramka {
-    50% {border: 10px lightblue;}
+    50% {border: 15px lightblue;}
 }
