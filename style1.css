@@ -1,0 +1,19 @@
+div {
+    background: green;
+    height: 30vh;
+    width: 260px;
+    text-align: center;
+}
+#container{
+    height: 90vh;
+    width: 250vh;
+    background-color: blue;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+
+}
+img{
+    border: 2px black solid;
+    border-radius: 10px;
+}
