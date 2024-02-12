@@ -3,16 +3,22 @@ div {
     height: 30vh;
     width: 260px;
     text-align: center;
+    align-content: flex-start;
+    justify-content: flex-start;
+    
 }
 #kontener{
-    height: 100vh;
+    height: 96vh;
     width: 130vh;
-    background-color: blue;
+    background-image: linear-gradient(blue,red,green);
     display: flex;
     flex-flow: column wrap;
     align-content: flex-start;
     align-content: space-around;
     justify-content: space-around;
+    overflow: hidden;
+    border: 1px black solid;
+    border-radius: 10px;
 
 }
 
@@ -26,13 +32,32 @@ img{
 .card{
     border: black 3px solid;
     border-radius: 6px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 body {
-    background-color: black;
+    background-image: linear-gradient(blue , red, green);
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 h3{
     margin-top: 15px;
 }
+
+#wyszukiwanieInput{
+    text-align: center;
+    border:  1px black solid;
+    border-radius: 10px 10px 0px 0px;
+    width: 50vh;
+}
+
+.card:hover {
+    transition:.5s ease-in-out;
+    rotate: 360deg;
+}
+
+
 
