@@ -21,7 +21,7 @@ h3{
 }
 
 footer {
-    background-image: url("11.png");
+    background-image: url("zadymiarze/11.png");
     width: 100%;
     height: 15px;
     animation: XD 4s infinite;
@@ -37,5 +37,5 @@ footer {
 }
 
 @keyframes ramka {
-    80% {border: 10px lightblue;}
+    50% {border: 10px lightblue;}
 }
