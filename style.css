@@ -23,7 +23,7 @@ h3{
 footer {
     background-image: url("zadymiarze/11.png");
     width: 100%;
-    height: 15px;
+    height: 251px;
     animation: XD 2s infinite;
     background-position: top right;
     animation: jpd 2s infinite;
@@ -37,9 +37,25 @@ footer {
 
 #szeli {
     border: 3px blue solid;
-    animation: ramka 15s infinite;
+    animation: ramka 3s infinite;
 }
 
 @keyframes ramka {
     50% {border: 15px lightblue solid;}
+}
+
+body {
+   background-image: url("zadymiarze/12.png");
+   background-position-x: left;
+   background-position-y: bottom;
+   animation: gora 5s infinite;
+   animation: lewo 5 infinite; 
+}
+
+@keyframes gora {
+    50% {background-position-y: top;}
+}
+
+@keyframes lewo {
+    50% {background-position-x: center;}
 }
