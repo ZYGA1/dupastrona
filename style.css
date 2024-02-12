@@ -37,5 +37,5 @@ footer {
 }
 
 @keyframes ramka {
-    50% {border: 15px lightblue;}
+    50% {border: 15px lightblue solid;}
 }
