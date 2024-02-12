@@ -5,15 +5,23 @@ div {
     text-align: center;
 }
 #container{
-    height: 90vh;
-    width: 250vh;
+    height: 94vh;
+    width: 130vh;
     background-color: blue;
     display: flex;
     flex-flow: column wrap;
     align-content: flex-start;
+    align-content: space-around;
+    justify-content: space-around;
 
 }
 img{
     border: 2px black solid;
     border-radius: 10px;
+    margin-top: 10px;
+}
+
+.card{
+    border: black 3px solid;
+    border-radius: 6px;
 }

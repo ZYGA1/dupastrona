@@ -8,7 +8,9 @@ var zdjencia =
  'zadymiarze/7.png',
  'zadymiarze/8.png',
  'zadymiarze/9.png',
- 'zadymiarze/10.png'],
+ 'zadymiarze/10.png',
+ 'zadymiarze/11.png',
+ 'zadymiarze/12.png'],
  [
   'Shelly',
   'El primo',
@@ -19,7 +21,9 @@ var zdjencia =
   'Poco',
   'Nita',
   'Piper',
-  'Mico'
+  'Mico',
+  'Leon',
+  'Crow'
  ]]
 
 
