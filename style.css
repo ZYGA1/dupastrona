@@ -25,6 +25,12 @@ footer {
     width: 100%;
     height: 15px;
     animation: XD 4s infinite;
+    background-position-y: top;
+    animation: jpd 2s infinite;
+}
+
+@keyframes jpd {
+    50% {background-position-y: center;}
 }
 
 @keyframes XD {
