@@ -25,7 +25,10 @@ var zdjencia = [['zadymiarze/1.png',
  'Crow']
 ]
 
-console.log(zdjencia)
+var nazwy = zdjencia[1].flat();
+console.log(nazwy)
+
+
 
 var zdjenciaIndex=0
 function postacieZdjecie() {
@@ -38,15 +41,25 @@ function postacieZdjecie() {
 }
 
 const zdjecia = document.getElementById("kontener")
-zdjencia[0].forEach(zdjecie => {
-    const box = document.createElement("div");
-    const imagine = document.createElement("img");
-    box.classList.add("card")
-    imagine.src = zdjecie;
-    imagine.alt = "picture";
-    zdjecia.appendChild(box);
-    box.appendChild(imagine);
+const karta = document.getElementsByClassName("card")
+zdjencia[0].forEach((zdjecie, index) => {
+        let box = document.createElement("div");
+        const imagine = document.createElement("img");
+        box.classList.add("card")
+        imagine.src = zdjecie;
+        imagine.alt = "picture";
+        zdjecia.appendChild(box);
+        box.appendChild(imagine);
+
+        let nazwa = document.createElement('h3');
+        nazwa.textContent = nazwy[index];
+        box.appendChild(nazwa);
+
+   
+        
+
 });
+
 
 
 
