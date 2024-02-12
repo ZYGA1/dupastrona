@@ -1,1 +1,1 @@
-https://zyga1.github.io/dupastrona/html.html
+https://zyga1.github.io/dupastrona/index.html
