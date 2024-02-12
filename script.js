@@ -1,32 +1,31 @@
-var zdjencia = 
-[['zadymiarze/1.png',
- 'zadymiarze/2.png',
- 'zadymiarze/3.png',
- 'zadymiarze/4.png',
- 'zadymiarze/5.png',
- 'zadymiarze/6.png',
- 'zadymiarze/7.png',
- 'zadymiarze/8.png',
- 'zadymiarze/9.png',
- 'zadymiarze/10.png',
- 'zadymiarze/11.png',
- 'zadymiarze/12.png'],
- [
-  'Shelly',
-  'El primo',
-  'Edgar',
-  'Colt',
-  'Brock',
-  'Bull',
-  'Poco',
-  'Nita',
-  'Piper',
-  'Mico',
-  'Leon',
-  'Crow']
+var zdjencia = [['zadymiarze/1.png',
+'zadymiarze/2.png',
+'zadymiarze/3.png',
+'zadymiarze/4.png',
+'zadymiarze/5.png',
+'zadymiarze/6.png',
+'zadymiarze/7.png',
+'zadymiarze/8.png',
+'zadymiarze/9.png',
+'zadymiarze/10.png',
+'zadymiarze/11.png',
+'zadymiarze/12.png'],
+[
+ 'Shelly',
+ 'El primo',
+ 'Edgar',
+ 'Colt',
+ 'Brock',
+ 'Bull',
+ 'Poco',
+ 'Nita',
+ 'Piper',
+ 'Mico',
+ 'Leon',
+ 'Crow']
 ]
 
-
+console.log(zdjencia)
 
 var zdjenciaIndex=0
 function postacieZdjecie() {
@@ -37,5 +36,19 @@ function postacieZdjecie() {
     zdjecie.src=zdjencia[0][zdjenciaIndex];
     nazwa.innerHTML = zdjencia[1][zdjenciaIndex];
 }
+
+const zdjecia = document.getElementById("kontener")
+zdjencia[0].forEach(zdjecie => {
+    const box = document.createElement("div");
+    const imagine = document.createElement("img");
+    box.classList.add("card")
+    imagine.src = zdjecie;
+    imagine.alt = "picture";
+    zdjecia.appendChild(box);
+    box.appendChild(imagine);
+});
+
+
+
 
 
