@@ -23,8 +23,8 @@ var zdjencia =
   'Piper',
   'Mico',
   'Leon',
-  'Crow'
- ]]
+  'Crow']
+]
 
 
 
