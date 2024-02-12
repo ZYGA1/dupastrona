@@ -27,3 +27,7 @@ img{
     border: black 3px solid;
     border-radius: 6px;
 }
+
+body {
+    background-color: black;
+}
