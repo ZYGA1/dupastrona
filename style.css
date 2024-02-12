@@ -1,21 +1,31 @@
-.sigma {
-
-    height: 100%;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#tak {
+    height: 40vh;
     background-color: green;
-    width: 100%;
+    width: 35vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-items: flex-end;
+    flex-flow: column;
 }
 
-body {
-    background-color: black;
+img{
+    border: 1px black solid;
+    border-radius: 10px;
+    
 }
+
 
 #tak{
-    border-radius: 3px;
-    border: 3px white dashed;
+    border-radius: 10px;
+    border: 3px black solid;
 }
+
 h3{
     text-align: center;
 }
@@ -23,16 +33,19 @@ h3{
 footer {
     background-color: blue;
     height: 5vh;
-    animation: aaa 120s infinite;
+    width: 35vh;
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+    
 }
 
-@keyframes aaa {
-    50%{
-        block-size: 6vh;
-    }
+a:link{
+    color: black;
 }
+
 
 p{
-    margin: 0;
     text-align: center;
+    margin: 10px;
 }
+
