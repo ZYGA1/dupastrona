@@ -4,6 +4,10 @@ body{
     align-items: center;
     height: 95vh;
     overflow: hidden;
+    background-image: url('zadymiarze/1.png');
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    animation: tlo 5s infinite alternate;
 }
 #tak {
     height: 40vh;
@@ -43,6 +47,16 @@ footer {
 
 a:link{
     color: black;
+}
+
+@keyframes tlo {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100%{
+        background-position: 0% 100%;
+    }
 }
 
 

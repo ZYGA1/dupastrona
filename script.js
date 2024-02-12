@@ -39,26 +39,35 @@ function postacieZdjecie() {
 }
 
 const zdjecia = document.getElementById("kontener")
-zdjencia[0].forEach((zdjecie, index) => {
-        let box = document.createElement("div");
-        const imagine = document.createElement("img");
-        box.classList.add("card")
-        imagine.src = zdjecie;
-        imagine.alt = "picture";
-        zdjecia.appendChild(box);
-        box.appendChild(imagine);
 
-        let nazwa = document.createElement('h3');
-        nazwa.textContent = nazwy[index];
-        box.appendChild(nazwa);
+function pojawianiezdjec(tekst = '') {
+    zdjecia.innerHTML = '';
 
-   
-        
+    zdjencia[0].forEach((zdjecie, index) => {
+        const nazwa = nazwy[index];
+      
+        if (nazwa.toLowerCase().includes(tekst.toLowerCase()) || zdjecie.toLowerCase().includes(tekst.toLowerCase())) {
+            let box = document.createElement("div");
+            const imagine = document.createElement("img");
+            box.classList.add("card")
+            imagine.src = zdjecie;
+            imagine.alt = "picture";
+            zdjecia.appendChild(box);
+            box.appendChild(imagine);
 
+            let nazwaElement = document.createElement('h3');
+            nazwaElement.textContent = nazwa;
+            box.appendChild(nazwaElement);
+        }
+    });
+}
+
+
+const wyszukiwanieInput = document.getElementById('wyszukiwanieInput');
+wyszukiwanieInput.addEventListener('input', function() {
+    const tekst = wyszukiwanieInput.value;
+    pojawianiezdjec(tekst);
 });
 
 
-
-
-
-
+pojawianiezdjec()
