@@ -48,14 +48,9 @@ body {
    background-image: url("zadymiarze/12.png");
    background-position-x: left;
    background-position-y: bottom;
-   animation: gora 5s infinite;
    animation: lewo 5 infinite; 
 }
 
-@keyframes gora {
-    50% {background-position-y: top;}
-}
-
 @keyframes lewo {
-    50% {background-position-x: center;}
+    50% {background-position: center;}
 }
