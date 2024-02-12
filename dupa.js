@@ -9,6 +9,7 @@ var zdjencia =
  'zadymiarze/8.png',
  'zadymiarze/9.png',
  'zadymiarze/10.png'];
+ 
 var zdjenciaIndex=0
 console.log("dupa")
 function funkcja() {
