@@ -28,13 +28,11 @@ footer {
     background-position-y: top;
     animation: jpd 2s infinite;
 }
-
-@keyframes jpd {
-    50% {background-position-y: center;}
-}
-
 @keyframes XD {
     50% {block-size: 200px;}
+}
+@keyframes jpd {
+    50% {background-position-y: center;}
 }
 
 #szeli {
