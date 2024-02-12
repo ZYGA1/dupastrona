@@ -11,7 +11,6 @@ var zdjencia =
  'zadymiarze/10.png'];
  
 var zdjenciaIndex=0
-console.log("dupa")
 function funkcja() {
     let tak = document.getElementById('szeli');
     zdjenciaIndex=(zdjenciaIndex+1) %zdjencia.length;
