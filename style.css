@@ -1,4 +1,4 @@
-uuuuuuuuuuuu.sigma {
+.sigma {
 
     height: 100%;
     background-color: green;
@@ -26,7 +26,7 @@ footer {
     height: 251px;
     animation: XD 2s infinite;
     background-position: top right;
-    animation: jpd 2s infinite;
+    animation: jpd 1s infinite;
 }
 @keyframes XD {
     50% {block-size: 200px;}
@@ -36,18 +36,18 @@ footer {
 }
 
 #szeli {
-    border: 3px blue solid;
-    animation: ramka 3s infinite;
+    border: 1px blue solid;
+    animation: ramka 1s infinite;
 }
 
 @keyframes ramka {
-    50% {border: 15px lightblue solid;}
+    50% {border: 50px lightblue solid;}
 }
 
 body {
    background-image: url("zadymiarze/12.png");
    background-position: bottom left;
-   animation: lewo 5s infinite; 
+   animation: lewo 1s infinite; 
 }
 
 @keyframes lewo {
