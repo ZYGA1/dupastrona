@@ -26,17 +26,6 @@ var zdjencia = [['zadymiarze/1.png',
 ]
 
 var nazwy = zdjencia[1].flat();
-console.log(nazwy)
-
-var zdjenciaIndex=0
-function postacieZdjecie() {
-    let zdjecie = document.getElementById('szeli');
-    let nazwa = document.getElementById('nazwa');
-
-    zdjenciaIndex=(zdjenciaIndex+1) %zdjencia[0].length;
-    zdjecie.src=zdjencia[0][zdjenciaIndex];
-    nazwa.innerHTML = zdjencia[1][zdjenciaIndex];
-}
 
 const zdjecia = document.getElementById("kontener")
 
@@ -71,3 +60,4 @@ wyszukiwanieInput.addEventListener('input', function() {
 
 
 pojawianiezdjec()
+

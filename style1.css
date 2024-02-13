@@ -19,6 +19,8 @@ div {
     overflow: hidden;
     border: 1px black solid;
     border-radius: 10px;
+    position: relative;
+    animation: spadanie 2s forwards;
 
 }
 
@@ -33,6 +35,7 @@ img{
     border: black 3px solid;
     border-radius: 6px;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    transition: 1s ease-in-out;
 }
 
 body {
@@ -55,8 +58,18 @@ h3{
 }
 
 .card:hover {
-    transition:.5s ease-in-out;
+   
     rotate: 360deg;
+}
+
+@keyframes spadanie {
+    0% {
+        top: -100vh;
+
+    }
+    100%{
+        top: 0;
+    }
 }
 
 

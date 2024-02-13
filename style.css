@@ -4,10 +4,11 @@ body{
     align-items: center;
     height: 95vh;
     overflow: hidden;
-    background-image: url('zadymiarze/1.png');
-    background-size: 100% 50%;
+    background-image: url('wp12077379.webp');
+    background-size: 100% 120%;
     background-repeat: no-repeat;
-    animation: tlo 5s infinite alternate;
+    animation: tlo 5s forwards;
+    position: relative;
 }
 #tak {
     height: 40vh;
@@ -17,6 +18,7 @@ body{
     align-items: center;
     justify-items: flex-end;
     flex-flow: column;
+    top: 10px;
 }
 
 img{
@@ -30,6 +32,7 @@ img{
 #tak{
     border-radius: 10px;
     border: 3px black solid;
+    transition: 0.1s transform, background-color 0.5s ;
 }
 
 h3{
@@ -42,7 +45,7 @@ footer {
     width: 35vh;
     border-top: 3px black solid;
     border-bottom: 3px black solid;
-    
+    text-align: center;
 }
 
 a:link{
@@ -51,19 +54,35 @@ a:link{
 
 @keyframes tlo {
     0% {
-        background-position: 0% 0%;
+        top: -100vh;
     }
 
     100%{
-        background-position: 0% 100%;
+        top: 0;
     }
 }
 
-
-
-
 p{
     text-align: center;
-    margin: 10px;
+    margin-top: 5px;
+
 }
 
+button {
+    border: 3px black solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    width: 20vh;
+    height: 4vh;
+    margin-top: 3px ;
+    transition: transform 0.1;
+    background-color: lightskyblue;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 110%;
+    
+}
+
+button:active {
+    transform: translateY(2px) translateZ(-2px); 
+    box-shadow: 0px 0px 0px;
+}
