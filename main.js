@@ -43,8 +43,8 @@ document.addEventListener("keydown", iwent =>{
     switch (iwent.key) {
         case 'a' :
             a.style.backgroundColor = 'white'
-            a.style.transform = 'rotate(-90deg)';
-            rotation = -90;
+            a.style.transform = 'rotate(270deg)';
+            rotation = 270;
             break;
         case 'd':
             a.style.transform = 'rotate(90deg)';
@@ -52,13 +52,13 @@ document.addEventListener("keydown", iwent =>{
             rotation = 90;
             break;
         case 'w':
-            a.style.transform = 'rotate(0deg)';
-            a.style.backgroundColor = 'white'
-            rotation = 0;
+            a.style.transform = 'rotate(360deg)';
+            a.style.backgroundColor = 'green'
+            rotation = 360;
             break;
         case 's':
             a.style.transform = 'rotate(180deg)';
-            a.style.backgroundColor = 'white'
+            a.style.backgroundColor = 'green'
             rotation = 180;
             break;
         case 'j' :
