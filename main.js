@@ -25,6 +25,7 @@ var zdjencia = [['zadymiarze/1.png',
  'Crow']
 ]
 
+
 var zdjenciaIndex=0
 function postacieZdjecie() {
     let zdjecie = document.getElementById('szeli');
