@@ -12,7 +12,7 @@ var zdjencia = [['zadymiarze/1.png',
 'zadymiarze/12.png'],
 [
  'Shelly',
- 'El primo',
+ 'El_primo',
  'Edgar',
  'Colt',
  'Brock',
@@ -34,7 +34,8 @@ function pojawianiezdjec(tekst = '') {
 
     zdjencia[0].forEach((zdjecie, index) => {
         const nazwa = nazwy[index];
-      
+        
+        
         if (nazwa.toLowerCase().includes(tekst.toLowerCase()) || zdjecie.toLowerCase().includes(tekst.toLowerCase())) {
             let box = document.createElement("div");
             const imagine = document.createElement("img");
@@ -47,6 +48,10 @@ function pojawianiezdjec(tekst = '') {
             let nazwaElement = document.createElement('h3');
             nazwaElement.textContent = nazwa;
             box.appendChild(nazwaElement);
+           
+            imagine.onclick = () =>{
+                location.href = dupa(nazwa)
+            }
         }
     });
 }
@@ -60,4 +65,8 @@ wyszukiwanieInput.addEventListener('input', function() {
 
 
 pojawianiezdjec()
+
+function dupa(nazwa) {
+    return 'strony/' + nazwa + '.html';
+}
 
