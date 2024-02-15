@@ -1,4 +1,4 @@
-var zdjencia = [['zadymiarze/1.png',
+let zdjencia = [['zadymiarze/1.png',
 'zadymiarze/2.png',
 'zadymiarze/3.png',
 'zadymiarze/4.png',
@@ -45,8 +45,13 @@ function pojawianiezdjec(tekst = '') {
             zdjecia.appendChild(box);
             box.appendChild(imagine);
 
+
             let nazwaElement = document.createElement('h3');
-            nazwaElement.textContent = nazwa;
+            if (nazwa == 'El_primo') {
+                nazwaElement.textContent = 'El primo';
+            }else {
+                nazwaElement.textContent = nazwa;
+            }
             box.appendChild(nazwaElement);
            
             imagine.onclick = () =>{
@@ -67,6 +72,7 @@ wyszukiwanieInput.addEventListener('input', function() {
 pojawianiezdjec()
 
 function dupa(nazwa) {
+
     return 'strony/' + nazwa + '.html';
 }
 
