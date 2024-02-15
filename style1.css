@@ -72,5 +72,12 @@ h3{
     }
 }
 
+button{
+    text-align: center;
+    border:  1px black solid;
+    border-radius: 10px 10px 0px 0px;
+    width: 50vh;
+}
+
 
 
